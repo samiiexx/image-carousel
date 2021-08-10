@@ -1,0 +1,74 @@
+/**
+ * Copyright 2021 sfchi
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+ 
+
+ *{
+    box-sizing: border-box;
+}
+
+ body {
+     font-family: 'Roboto', sans-serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     margin: 0;
+    background-color: thistle;
+ }
+
+ img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+ .carousel {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    height: 530px;
+    width: 500px;
+    overflow: hidden;
+ }
+
+ .image-container {
+     display: flex;
+     transform: translateX(0);
+     transition: transform 0.5s ease-in-out;
+ }
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: lightcoral;
+    color: #fff;
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+    width: 49.5%;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    opacity: 0.9;
+    transition: opacity .5s ease;
+}
+
+.btn:focus {
+    outline: none;
+}
